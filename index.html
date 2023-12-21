@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>Store Heading</title>
+    <!--<link href="bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" >-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
@@ -15,7 +16,7 @@
             <br>
             <h2>Smart modules</h2>
             <div class="container d-flex flex-row-reverse mx-5s">
-              <a class="btn btn-primary  rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i class="bi bi-cart"></i></a>
+              <button id='cart-button' class="btn btn-primary  rounded-circle" data-bs-toggle="offcanvas" data-bs-target="#offcanvas"><i id='cart-button-i' class="bi bi-cart"></i></button>
             </div>
         </div>
       </div>
@@ -24,93 +25,10 @@
       <!--PRODUCTS-->
 
       <div class="container text-center w-50">
-        <div class="row p-2 g-2">
-          
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">C42GM</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">NB1/NB2,LTE-M1</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">C41QS</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">NB2</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">C16QS</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">LTE CAT 1.BIS</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row p-2 g-2">
-          
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">C10QM</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">LTE CAT 1/2G</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">C20GM</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">LTE CAT 4 / 2G</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">C10GS</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">CAT 1</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
+        <div id="parent-container" class="row p-2 g-2">
         
         </div>
 
-        <div class="row p-2 g-2">
-          
-          <div class="col-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/1.png">
-                <p class="card-text" style="color: #506979;">CQS290</p>
-                <span class="border border-primary border-3 rounded-pill p-1" style="border-color: #334bff; font-size: x-small;">CAT4</span><br><br>
-                <a href="#modal" class="btn btn-primary rounded-pill shadow" style="background-color: #5266ff;" data-bs-toggle="modal" data-bs-target="#modal"><i class="bi bi-cart"></i> <strong> Add to cart</strong></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
       </div>
 
 
@@ -196,12 +114,41 @@
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
-            <div class="modal-body">
-              ...
+            <div id='cart-modal' class="modal-body">
+              <form id="cart-form" class="d-flex">
+                <div class="mx-2">
+                  <label>Region</label>
+                  <select id='region' class="form-select" aria-label="Default select example ">
+                    <option disabled value="" selected></option>
+                    <option value="GLOBAL">Global</option>
+                    <option value="EU">Europe</option>
+                    <option value="SAM">South America</option>
+                    <option value="NAM">North America</option>
+                    <option value="APAC">Asia Pacific & Japan</option>
+                  </select>
+                </div>
+                <div class="mx-2" >
+                  <label>E-sim</label>
+                  <select id='esim' class="form-select" aria-label="Default select example">
+                    <option disabled value="" selected ></option>
+                    <option value="true">True</option>
+                    <option value="false">False</option>
+                  </select>
+                </div>
+                <div class="mx-2">
+                  <label>Form Factor</label>
+                  <select id='form-factor' class="form-select" aria-label="Default select example">
+                    <option disabled value="" selected></option>
+                    <option value="M.2">M.2</option>
+                    <option value="MiniPCI">MiniPCI</option>
+                    <option value="LGA">LGA</option>
+                  </select>
+                </div>
+              </form>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Add to cart</button>
+              <button type="button" onClick="loadJSON()" class="btn btn-primary">Add to cart</button>
             </div>
           </div>
         </div>
@@ -223,5 +170,6 @@
 
       <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
       <script src="main.js"></script>
+      <!--<script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>-->
 </body>
 </html>
