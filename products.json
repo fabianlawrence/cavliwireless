@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "productname":" C10GS -A1",
+        "rot": ["APAC"],
+        "esim": true,
+        "ff": ["M.2, MiniPCI, LGA"]
+    },
+
+    {
+        "id": 2,
+        "productname":" C10GS -A2",
+        "rot": ["APAC"],
+        "esim": true,
+        "ff": ["M.2, MiniPCI, LGA"]
+    },
+
+    {
+        "id": 3,
+        "productname":" C10GS -A3",
+        "rot": ["APAC","NUM"],
+        "esim": false,
+        "ff": ["M.2, MiniPCI, LGA"]
+    },
+
+    {
+        "id": 4,
+        "productname":" C10GS -A4",
+        "rot": ["APAC","SAM"],
+        "esim": true,
+        "ff": ["M.2, MiniPCI, LGA"]
+    },
+
+    {
+        "id": 5,
+        "productname":" C10GS -A5",
+        "rot": ["NUM","SAM","EU","GLOBAL"],
+        "esim": false,
+        "ff": ["M.2, MiniPCI, LGA"]
+    }
+    
+
+]
